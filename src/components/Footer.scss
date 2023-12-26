@@ -11,7 +11,7 @@ footer {
   min-height: 100px;
   width: 100%;
   .newsletter {
-    background-color: orangered;
+    background-color: #072a5e;
     h4 {
       font-size: 22px;
       color: #fff;
@@ -47,7 +47,8 @@ footer {
     .bar {
       width: 60px;
       height: 5px;
-      background-color: orangered;
+      background-color: #1d97dc;
+      animation: fillIn 3s linear infinite 4s;
     }
     .b-heading {
       font-size: 40px;
@@ -82,9 +83,9 @@ footer {
           display: flex;
           align-items: center;
           justify-content: center;
-          border: 1px solid orangered;
+          border: 1px solid #1d97dc;
           i {
-            color: orangered;
+            color: #1d97dc;
           }
         }
       }
@@ -94,8 +95,13 @@ footer {
         font-weight: bold;
         letter-spacing: 1px;
         border-width: 3px;
-        border-color: orangered;
-        color: orangered;
+        border-color: #1d97dc;
+        color: #1d97dc;
+        &:hover {
+          color: #072a5e;
+          background-color: #fff;
+          border-color: #072a5e;
+        }
       }
     }
     .footer-row {
@@ -116,5 +122,15 @@ footer {
         }
       }
     }
+  }
+}
+
+@keyframes fillIn {
+  0%,
+  100% {
+    width: 60px;
+  }
+  50% {
+    width: 0;
   }
 }
