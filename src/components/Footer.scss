@@ -1,18 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+$poppins: "Poppins", sans-serif;
 .columns-2 {
   columns: 2;
+}
+a {
+  text-decoration: none;
 }
 footer {
   background-color: #eee;
   min-height: 100px;
   width: 100%;
-  a {
-    text-decoration: none;
-    color: #777;
-    transition: 0.3s ease;
-    &:hover {
-      color: #333;
-    }
-  }
   .newsletter {
     background-color: orangered;
     h4 {
@@ -20,18 +17,102 @@ footer {
       color: #fff;
       font-weight: bold;
       letter-spacing: 1px;
+      font-family: $poppins;
     }
     form {
       width: 100%;
       .form-group {
         height: 50px;
-        input,button{
-            height: 100%;
-            border-radius: 0;
+        input,
+        button {
+          height: 100%;
+          border-radius: 0;
         }
         button {
           right: 0;
           top: 0;
+        }
+      }
+    }
+  }
+  .footer-section {
+    font-family: $poppins;
+    .text-bold {
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-right: 30px;
+    }
+    .bar {
+      width: 60px;
+      height: 5px;
+      background-color: orangered;
+    }
+    .b-heading {
+      font-size: 40px;
+      font-weight: 700;
+      span {
+        display: block;
+      }
+    }
+    .contact-info {
+      a {
+        color: #000;
+        &::before {
+          content: attr(title);
+          display: block;
+          font-weight: 700;
+          letter-spacing: 0.8px;
+        }
+      }
+    }
+    .social-links {
+      margin-top: 25px;
+      h5 {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .links {
+        a {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid orangered;
+          i {
+            color: orangered;
+          }
+        }
+      }
+    }
+    .contact-btn {
+      a {
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-width: 3px;
+        border-color: orangered;
+        color: orangered;
+      }
+    }
+    .footer-row {
+      > div {
+        position: relative;
+        &:not(:last-child) {
+          &::after {
+            content: "";
+            position: absolute;
+            height: 80%;
+            width: 2px;
+            background-color: #dfdfdf;
+            right: 10px;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+          }
         }
       }
     }

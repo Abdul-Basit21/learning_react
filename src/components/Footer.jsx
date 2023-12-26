@@ -2,6 +2,7 @@ import "./Footer.scss";
 import logo from "../images/logo.png";
 
 const Footer = () => {
+  const footerHeading = "Let's";
   return (
     <>
       <footer>
@@ -27,9 +28,9 @@ const Footer = () => {
                         />
                         <button
                           type="submit"
-                          className="btn btn-primary d-block btn-sm position-absolute"
+                          className="btn btn-primary d-block btn-lg position-absolute"
                         >
-                          Subscribe
+                          <i className="fas fa-paper-plane"></i>
                         </button>
                       </div>
                     </form>
@@ -39,40 +40,64 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="container mb-5">
-          <div className="row">
+        <div className="container mt-4 footer-section pb-4">
+          <div className="row footer-row">
             <div className="col-12 col-lg-4">
               <div className="logo">
                 <img src={logo} alt="logo-footer" />
+                <p className="text-bold">
+                  Our versatile design allows for adaptability to various
+                  structures, enhancing the overall construction process.
+                </p>
+                <div className="bar"></div>
               </div>
             </div>
-            <div className="col-12 col-lg-5">
-              <h4 className="mt-3">Primary Links</h4>
-              <ul className="list-unstyled columns-2">
-                <li>
-                  <a href="#!">Home</a>
-                </li>
-                <li>
-                  <a href="#!">About</a>
-                </li>
-                <li>
-                  <a href="#!">Services</a>
-                </li>
-                <li>
-                  <a href="#!">Blog</a>
-                </li>
-                <li>
-                  <a href="#!">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#!">Terms & Condition</a>
-                </li>
-                <li>
-                  <a href="#!">Contact Us</a>
-                </li>
-              </ul>
+            <div className="col-12 col-lg-4 pe-5">
+              <h4 className="mt-3 b-heading text-capitalize">
+                <span>{footerHeading} talk about</span> you
+              </h4>
+              <p>
+                We understand what your business needs are, and can help you
+                reach your goals. Reach out to us today to know more.
+              </p>
+              <div className="contact-info d-flex justify-content-between">
+                <a href="#!" className="position-relative" title="Email Us:">
+                  info@mage4.com
+                </a>
+                <a href="#!" className="position-relative" title="Call Us:">
+                  +92 321 12312345
+                </a>
+              </div>
+              <div className="social-links">
+                <h5>Follow Us:</h5>
+                <div className="links d-flex align-items-center gap-2">
+                  <a href="#!">
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#!">
+                    <i className="fab fa-x-twitter"></i>
+                  </a>
+                  <a href="#!">
+                    <i className="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#!">
+                    <i className="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="col-12 col-lg-3"></div>
+            <div className="col-12 col-lg-4 pe-5">
+              <h4 className="mt-3 b-heading text-capitalize">Get In Touch</h4>
+              <p>
+                If you have any queries, our team is always here to help. Feel
+                free to contact us. Click to connect now
+              </p>
+              <div className="contact-btn mt-5">
+                <a href="#!" className="text-uppercase btn btn-outline-primary">
+                  Contact Us
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
