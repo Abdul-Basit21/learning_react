@@ -6,7 +6,8 @@
     height: 100%;
 }
 
-.hero-main .hero-img img{
+.hero-main .hero-img img, 
+.about-main .hero-img img{
     height: 550px;
     width: 580px;
 }

@@ -1,0 +1,46 @@
+.about-main{
+    height: 750px;
+    background-color: #FBFAFF;
+
+}
+.about-main .container{
+    height: 100%;
+}
+
+.about-main h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.feature-box{
+    border: 2px solid #eeeeee;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-box .feature-icon i{
+    font-size: 24px;
+    color: #1D97DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d96dc44;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.feature-box .feature-icon{
+    width: 20%;
+}
+
+.feature-box .feat-head{
+    color: #072A5E;
+    font-size: 26px;
+    font-weight: 500;
+}
+.feature-box .feat-para{
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
