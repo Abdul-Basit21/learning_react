@@ -1,10 +1,44 @@
-import "./Footer.css";
+import "./Footer.scss";
 import logo from "../images/logo.png";
 
 const Footer = () => {
   return (
     <>
       <footer>
+        <div className="container-fluid newsletter">
+          <div className="container py-4">
+            <div className="row">
+              <div className="col-12 px-2">
+                <div className="row align-items-center">
+                  <div className="col-6">
+                    <h4 className="mb-0 text-uppercase">
+                      Stay Connected! Sign up for our newsletter
+                    </h4>
+                  </div>
+                  <div className="col-6 d-flex justify-content-end">
+                    <form action="">
+                      <div className="form-group position-relative">
+                        <input
+                          type="text"
+                          name="subs"
+                          id="subs"
+                          className="form-control"
+                          placeholder="Enter Your Email"
+                        />
+                        <button
+                          type="submit"
+                          className="btn btn-primary d-block btn-sm position-absolute"
+                        >
+                          Subscribe
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="container mb-5">
           <div className="row">
             <div className="col-12 col-lg-4">
@@ -38,27 +72,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-12 col-lg-3">
-              <h4 className="mt-3">Newsletter</h4>
-              <form action="">
-                <div className="form-group">
-                  <label htmlFor="">Subscribe</label>
-                  <input
-                    type="text"
-                    name="subs"
-                    id="subs"
-                    className="form-control"
-                    placeholder="Enter Your Email"
-                  />
-                  <button
-                    type="submit"
-                    className="btn btn-primary mt-2 d-block btn-sm"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
+            <div className="col-12 col-lg-3"></div>
           </div>
         </div>
       </footer>
