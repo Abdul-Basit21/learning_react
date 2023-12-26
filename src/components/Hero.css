@@ -1,0 +1,26 @@
+.hero-main{
+    height: calc(100vh - 75px);
+    background-color: #E7F9F7;
+}
+.hero-main .container{
+    height: 100%;
+}
+
+.hero-main .hero-img img{
+    height: 550px;
+    width: 580px;
+}
+.hero-text-main{
+    font-size: 76px;
+    font-weight: 900;
+    color: #072A5E;
+}
+.hero-text-main span.changeable-text{
+    color: #1D97DC;
+}
+.hero-para{
+    font-size: 17px;
+    line-height: 26px;
+    color: #333;
+    width: 80%;
+}

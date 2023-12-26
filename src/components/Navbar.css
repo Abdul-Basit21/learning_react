@@ -1,5 +1,6 @@
 .navbar{
     padding: 0;
+    height: 75px;
 }
 .navbar a img{
     height: 65px;
@@ -27,4 +28,5 @@
 }
 .navbar form button:hover{
     background-color: inherit;
+    /* color: #fff; */
 }
