@@ -1,5 +1,6 @@
 import "./Footer.scss";
 import logo from "../images/logo.png";
+import ContactButton from "./buttons/ContactButton";
 
 const Footer = () => {
   const footerHeading = "Let's";
@@ -92,10 +93,8 @@ const Footer = () => {
                 If you have any queries, our team is always here to help. Feel
                 free to contact us. Click to connect now
               </p>
-              <div className="contact-btn mt-5">
-                <a href="#!" className="text-uppercase btn btn-outline-primary">
-                  Contact Us
-                </a>
+              <div className="mt-5">
+                <ContactButton />
               </div>
             </div>
           </div>

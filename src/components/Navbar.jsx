@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
+import ContactButton from "./buttons/ContactButton";
 
 export default function Navbar() {
   return (
@@ -47,11 +48,7 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <button className="btn" type="submit">
-                Contact Us
-              </button>
-            </form>
+            <ContactButton />
           </div>
         </div>
       </nav>
