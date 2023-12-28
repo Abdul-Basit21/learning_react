@@ -30,3 +30,58 @@
   background-color: inherit;
   /* color: #fff; */
 }
+
+
+@media only screen and (max-width: 768px){
+  .navbar-collapse {
+    left: 0;
+    transition: all 0.5s ease;
+    transform: translateX(-100%);
+    display: block !important;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 70px 20px 20px;
+    height: 100%;
+  }
+  .navbar-collapse.show {
+
+    transform: translateX(0);
+    
+  }
+  .closeMenu {
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #00000061;
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .navbar-collapse .contact-form{
+    margin-inline: auto;
+    width: 240px;
+    height: 55px;
+  }
+  .navbar-collapse .contact-form button{
+    height: 100%;
+  }
+  .navbar-nav {
+    gap: 40px;
+    margin-bottom: 80px !important;
+    margin-top: 20px;
+  }
+  .navbar ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

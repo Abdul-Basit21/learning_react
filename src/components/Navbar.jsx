@@ -43,7 +43,16 @@ export default function Navbar() {
             }
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-5">
+            <a 
+              href="#!"
+              className="closeMenu position-absolute d-lg-none"
+              onClick={() => {
+                setToggle(false);
+              }}
+            >
+              <i className="fa-solid fa-xmark"></i>
+            </a>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-lg-5">
               <li className="nav-item">
                 <Link className="nav-a active" aria-current="page" to="/">
                   Home

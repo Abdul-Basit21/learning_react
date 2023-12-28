@@ -62,10 +62,10 @@ const Footer = () => {
                 reach your goals. Reach out to us today to know more.
               </p>
               <div className="contact-info d-flex justify-content-between">
-                <a href="#!" className="position-relative" title="Email Us:">
+                <a href="mailto:" className="position-relative" title="Email Us:">
                   info@mage4.com
                 </a>
-                <a href="#!" className="position-relative" title="Call Us:">
+                <a href="tel:" className="position-relative" title="Call Us:">
                   +92 321 12312345
                 </a>
               </div>
