@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <div className='container-fluid about-main'>
         <div className='container'>
-            <div className="row">
+            <div className="row align-items-center">
                 <div className="hero-img col-lg-6 col-md-5 col-sm-12">
                     <img src={about1} alt="" />
                 </div>

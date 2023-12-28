@@ -3,7 +3,7 @@
     background-color: #FBFAFF;
 
 }
-.about-main .container{
+.about-main .container, .about-main .container .row{
     height: 100%;
 }
 

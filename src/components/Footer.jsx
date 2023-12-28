@@ -29,9 +29,9 @@ const Footer = () => {
                         />
                         <button
                           type="submit"
-                          className="btn btn-primary d-block btn-lg position-absolute"
+                          className="btn d-block btn-lg position-absolute"
                         >
-                          <i className="fas fa-paper-plane"></i>
+                          <i className="fas fa-paper-plane text-white"></i>
                         </button>
                       </div>
                     </form>
