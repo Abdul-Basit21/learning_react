@@ -11,7 +11,7 @@ export default function AboutSection() {
                     <img src={about1} alt="" />
                 </div>
                 <div className="hero-content col-lg-6 col-md-5 col-sm-12">
-                    <h2 className='hero-text-main'>
+                    <h2 className='hero-text-main about-text'>
                         Learn New Skills To Go Ahead For Your <span className='changeable-text'>Career</span>
                     </h2>
                     <p className='my-4 hero-para'>Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore et simply.</p>

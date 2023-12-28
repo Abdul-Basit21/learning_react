@@ -7,7 +7,7 @@
     height: 100%;
 }
 
-.about-main h2{
+h2.about-text{
     font-size: 36px;
     font-weight: 600;
 }

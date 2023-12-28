@@ -1,0 +1,55 @@
+.counter-section{
+    padding-bottom: 60px;
+}
+.counter-section .row{
+    flex-wrap: nowrap;
+}
+.counter-content {
+    font-size: 30px;
+}
+.counter-box{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    gap: 5px;
+}
+
+.counter-box i{
+    font-size: 48px;
+    margin-right: 10px;
+}
+.counter-box i.fa-face-smile{
+    font-size: 48px;
+    color: #4153EF;
+    margin-right: 10px;
+}
+.counter-box i.fa-envira{
+    color: #1CBD5B;
+}
+.counter-box i.fa-percent{
+    color: #EE6C20;
+}
+.counter-box i.fa-users{
+    color: #27D0C0;
+}
+.counter-box span.js-counter{
+    font-size: 30px;
+    font-weight: 700;
+    color: #072a5e;
+}
+
+.counter-box h3.counterSymbol span{
+    display: block;
+    font-size: 17px;
+    color: #888;
+    font-weight: 400;
+}
+
+@media (max-width: 768px){
+    .counter-section .row{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
