@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-12 col-lg-4 pe-5">
-              <h4 className="mt-3 b-heading text-capitalize">Get In Touch</h4>
+              <h4 className="mt-3 b-heading text-capitalize">Get In <span>Touch</span></h4>
               <p>
                 If you have any queries, our team is always here to help. Feel
                 free to contact us. Click to connect now
