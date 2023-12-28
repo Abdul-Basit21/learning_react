@@ -81,7 +81,7 @@ export default function Counter() {
         </div>
         <div className="col-lg-3 col-md-6 col-10">
           <div className="counter-box">
-            <i class="fa-brands fa-envira"></i>
+            <i className="fa-brands fa-envira"></i>
             <div className="counter-content">
               <span className="js-counter" data-number="1500">
                 0
@@ -95,7 +95,7 @@ export default function Counter() {
         </div>
         <div className="col-lg-3 col-md-6 col-10">
           <div className="counter-box">
-            <i class="fa-solid fa-percent"></i>
+            <i className="fa-solid fa-percent"></i>
             <div className="counter-content">
               <span className="js-counter" data-number="99.99">
                 0
@@ -109,7 +109,7 @@ export default function Counter() {
         </div>
         <div className="col-lg-3 col-md-6 col-10">
           <div className="counter-box">
-            <i class="fa-solid fa-users"></i>
+            <i className="fa-solid fa-users"></i>
             <div className="counter-content">
               <span className="js-counter" data-number="50">
                 0
