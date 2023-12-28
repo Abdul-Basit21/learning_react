@@ -45,6 +45,7 @@
     left: 0;
     padding: 70px 20px 20px;
     height: 100%;
+    z-index: 99;
   }
   .navbar-collapse.show {
 

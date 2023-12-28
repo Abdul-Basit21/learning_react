@@ -43,7 +43,7 @@ export default function Navbar() {
             }
             id="navbarSupportedContent"
           >
-            <a 
+            <a
               href="#!"
               className="closeMenu position-absolute d-lg-none"
               onClick={() => {
@@ -54,21 +54,45 @@ export default function Navbar() {
             </a>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-lg-5">
               <li className="nav-item">
-                <Link className="nav-a active" aria-current="page" to="/">
+                <Link
+                  className="nav-a active"
+                  aria-current="page"
+                  to="/"
+                  onClick={() => {
+                    setToggle(false);
+                  }}
+                >
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-a" to="/about">
+                <Link
+                  className="nav-a"
+                  to="/about"
+                  onClick={() => {
+                    setToggle(false);
+                  }}
+                >
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-a" to="/services">
+                <Link
+                  className="nav-a"
+                  to="/services"
+                  onClick={() => {
+                    setToggle(false);
+                  }}
+                >
                   Services
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                onClick={() => {
+                  setToggle(false);
+                }}
+              >
                 <Link className="nav-a" to="/blog">
                   Blog
                 </Link>
