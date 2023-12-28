@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 $poppins: "Poppins", sans-serif;
-@mixin responsive($size){
-  @if($size == 'mobile'){
-    @media (max-width: 768px){
+@mixin responsive($size) {
+  @if ($size == "mobile") {
+    @media (max-width: 768px) {
       @content;
     }
   }
@@ -137,8 +137,18 @@ footer {
             border-radius: 100%;
             top: 50%;
             transform: translateY(-50%);
-            @include responsive('mobile'){
-              content: unset;
+            @include responsive("mobile") {
+              content: "";
+              position: absolute;
+              width: 80%;
+              height: 2px;
+              background-color: #dfdfdf;
+              left: 50%;
+              border-radius: 100%;
+              bottom: -11px;
+              transform: translateX(-50%);
+              right: unset;
+              top: unset;
             }
           }
         }

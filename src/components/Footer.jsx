@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div className="container mt-4 footer-section pb-5 pt-2">
           <div className="row footer-row">
-            <div className="col-12 col-lg-4">
+            <div className="col-12 col-lg-4 pb-3 pb-lg-0">
               <div className="logo">
                 <img src={logo} alt="logo-footer" />
                 <p className="text-bold">
@@ -53,7 +53,7 @@ const Footer = () => {
                 <div className="bar"></div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 pe-5">
+            <div className="col-12 col-lg-4 pe-5 pt-2 pt-lg-0 pb-3 col-pb-0">
               <h4 className="mt-3 b-heading text-capitalize">
                 <span>{footerHeading} talk about</span> you
               </h4>
@@ -87,7 +87,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 pe-5">
+            <div className="col-12 col-lg-4 pe-5 pt-2 pt-lg-0">
               <h4 className="mt-3 b-heading text-capitalize">Get In <span>Touch</span></h4>
               <p>
                 If you have any queries, our team is always here to help. Feel
