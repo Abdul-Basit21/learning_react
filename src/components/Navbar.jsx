@@ -2,8 +2,17 @@ import "./Navbar.css";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import ContactButton from "./buttons/ContactButton";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [toggle, setToggle] = useState(false);
+  // const toggle = false;
+  const handleMenuClick = () => {
+    setToggle(true);
+    if (toggle == true) {
+      setToggle(false);
+    }
+  };
   return (
     <>
       <nav
@@ -22,10 +31,18 @@ export default function Navbar() {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={handleMenuClick}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            className={
+              toggle == true
+                ? "collapse navbar-collapse show"
+                : "collapse navbar-collapse"
+            }
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-5">
               <li className="nav-item">
                 <Link className="nav-a active" aria-current="page" to="/">
