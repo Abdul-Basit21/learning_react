@@ -12,12 +12,12 @@ const Footer = () => {
             <div className="row">
               <div className="col-12 px-2">
                 <div className="row align-items-center">
-                  <div className="col-6">
+                  <div className="col-lg-6 col-sm-12 mb-3 mb-lg-0 text-center text-lg-start">
                     <h4 className="mb-0 text-uppercase">
                       Stay Connected! Sign up for our newsletter
                     </h4>
                   </div>
-                  <div className="col-6 d-flex justify-content-end">
+                  <div className="col-lg-6 col-sm-12 d-flex justify-content-end">
                     <form action="">
                       <div className="form-group position-relative">
                         <input
