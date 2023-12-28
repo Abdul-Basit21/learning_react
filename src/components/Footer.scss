@@ -45,10 +45,23 @@ footer {
       padding-right: 30px;
     }
     .bar {
-      width: 60px;
-      height: 5px;
+      width: 80px;
+      height: 8px;
       background-color: #1d97dc;
-      animation: fillIn 3s linear infinite 4s;
+      border-radius: 50px;
+      position: relative;
+      margin-top: 40px;
+      &:after {
+        content: "";
+        width: 250px;
+        height: 2px;
+        background-color: inherit;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: 99999;
+        transform: translateY(-50%);
+      }
     }
     .b-heading {
       font-size: 40px;
@@ -122,15 +135,5 @@ footer {
         }
       }
     }
-  }
-}
-
-@keyframes fillIn {
-  0%,
-  100% {
-    width: 60px;
-  }
-  50% {
-    width: 0;
   }
 }
