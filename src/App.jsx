@@ -4,7 +4,7 @@ import AboutPage from "./components/AboutPage";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Layout from "./Layout";
-import { ErrorPage } from "./components/ErrorPage";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element="" />
+          <Route path="/services" />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Layout>
