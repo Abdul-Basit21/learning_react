@@ -4,14 +4,20 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Footer from "./components/Footer"
 import AboutSection from './components/AboutSection'
+import AboutPage from './components/AboutPage'
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <AboutSection />
-      <Footer/>
+    
+        <Navbar />
+        <Routes>
+              <Route index  element={<Home />} />
+              <Route path="/about"  element={<AboutPage />} />
+        </Routes>
+        <Footer/>
     </>
   );
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import './Navbar.css'
 import logo from "../images/logo.png";
+import {Routes, Route, Link} from "react-router-dom";
+
 
 export default function Navbar() {
   return (
@@ -14,16 +16,16 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-5">
                     <li className="nav-item">
-                        <a className="nav-a active" aria-current="page" href='#'>Home</a>
+                        <Link className="nav-a active" aria-current="page" to='/'>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-a" href='#'>About</a>
+                        <Link className="nav-a" to='/about'>About</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-a" href='#'>Services</a>
+                        <Link className="nav-a" to='#'>Services</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-a" href='#'>Blog</a>
+                        <Link className="nav-a" to='#'>Blog</Link>
                     </li>
                 </ul>
                 <form className="d-flex" role="search">

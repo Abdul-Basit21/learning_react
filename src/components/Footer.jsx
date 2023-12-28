@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="container mt-4 footer-section pb-4">
+        <div className="container mt-4 footer-section pb-5 pt-2">
           <div className="row footer-row">
             <div className="col-12 col-lg-4">
               <div className="logo">

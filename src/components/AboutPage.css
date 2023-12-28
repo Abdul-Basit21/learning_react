@@ -1,0 +1,14 @@
+.page-main-banner{
+    background-image: url(../images/section-top.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.page-main-banner h2.page-head{
+    font-size: 66px;
+}
