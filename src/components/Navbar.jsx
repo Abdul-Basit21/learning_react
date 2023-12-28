@@ -1,7 +1,6 @@
-import React from 'react'
 import './Navbar.css'
 import logo from "../images/logo.png";
-import {Routes, Route, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 export default function Navbar() {
@@ -22,7 +21,7 @@ export default function Navbar() {
                         <Link className="nav-a" to='/about'>About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-a" to='#'>Services</Link>
+                        <Link className="nav-a" to='/services'>Services</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-a" to='#'>Blog</Link>
