@@ -12,3 +12,16 @@
 .page-main-banner h2.page-head{
     font-size: 66px;
 }
+
+.member-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 100px;
+    padding: 60px 0 100px;
+}
+
+
+.member-img{
+    width: 200px;
+    height: 200px;
+}
