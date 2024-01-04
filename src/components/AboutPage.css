@@ -13,15 +13,109 @@
     font-size: 66px;
 }
 
-.member-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 100px;
-    padding: 60px 0 100px;
+.team-member {
+    border: 1px solid #EDF4FE;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    width: 95%;
+    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */ 
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.team-member:hover .member-img{
+    filter: blur(2px);
 }
 
 
-.member-img{
-    width: 200px;
-    height: 200px;
+.member-img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    transition: all 0.5s ease;
+}
+
+.team-member 
+h2.member-name {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.team-member 
+ h2.member-name a {
+    font-size: 22px;
+    padding-inline: 20px;
+    margin: 0;
+    padding-bottom: 0;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.team-member 
+ h2.member-name a:hover {
+    color: #1D97DC;
+ }
+p.memeber-destination {
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #74787C;
+    font-size: 16px;
+    font-weight: 500;
+}
+ul.member-social-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+ul.member-social-info li{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.2s ease;
+
+}
+ul.member-social-info li a{
+    font-weight: bold;
+    font-size: 15px;
+    color: #1D97DC;
+    transition: all 0.2s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.member-social-info li:hover {
+    background-color: #1D97DC;
+}
+
+ul.member-social-info li:hover a{
+    color: #fff;
+}
+
+.member-img-wrapper {
+    position: relative;
+}
+
+ul.member-social-info li:not(:last-child) {
+    transform: scale(0);
+    transform-origin: bottom;
+}
+
+.team-member:hover ul.member-social-info li:not(:last-child) {
+    transform: scale(1);
+
 }

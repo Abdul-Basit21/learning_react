@@ -2,7 +2,7 @@ import "./Navbar.css";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import ContactButton from "./buttons/ContactButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -13,6 +13,23 @@ export default function Navbar() {
       setToggle(false);
     }
   };
+
+  ud
+
+  useEffect ( ()=> {
+
+    var scrollDiv = document.querySelector('.scrollbar');
+  
+    window.scroll = () => {
+      let ScrollT = (document).scrollTop();
+      let pageH = (document).height() - (window).height();
+      let progress = (100 * ScrollT) / pageH;
+      $(".scroll-bar").css("width", `{progress}%`);
+    }
+  },[])
+
+
+
   return (
     <>
       <nav
@@ -102,6 +119,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+      <div className="scrollbar"></div>
     </>
   );
 }

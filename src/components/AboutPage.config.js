@@ -3,11 +3,15 @@ import RehanMobin from '../images/rehan-mobin.jpeg';
 import danishAhmad from '../images/danish-ahmad.jpeg';
 import mustajabAhmad from '../images/mustajab-ahmad.jpeg';
 import tahaAhmad from '../images/taha-ahmad.png';
+import fahadHussain from '../images/fahad-hussain.jpeg'
+import saifBinZahid from '../images/saif-bin-zahid.jpeg'
+import syedUsama from '../images/syed-usama.png'
+
 
 const TeamMembers = [
     {
-        Name : 'Saad Ahmad The Legend',
-        Destination : 'Front-End Lead',
+        Name : 'Saad Ahmad',
+        Destination : 'Front-End',
         avatar : saad,
         socialLinks : {
             facebook : 'www.facebook.com' ,
@@ -50,11 +54,34 @@ const TeamMembers = [
             linkedin : 'www.linkedin.com'
         }
     } ,
+    {
+        Name : 'Fahad Hussain',
+        Destination : 'Magento Developer',
+        avatar : fahadHussain,
+        socialLinks : {
+            facebook : 'www.facebook.com' ,
+            linkedin : 'www.linkedin.com'
+        }
+    } ,
+    {
+        Name : 'Saif Bin Zahid',
+        Destination : 'Magento Developer',
+        avatar : saifBinZahid,
+        socialLinks : {
+            facebook : 'www.facebook.com' ,
+            linkedin : 'www.linkedin.com'
+        }
+    } ,
+    {
+        Name : 'Syed Usama',
+        Destination : 'Backend Developer',
+        avatar : syedUsama,
+        socialLinks : {
+            facebook : 'www.facebook.com' ,
+            linkedin : 'www.linkedin.com'
+        }
+    } ,
  
-    // 'Taha Ahmad', 
-    // 'Fahad Hussain', 
-    // 'Saif Bin Zahid',
-    // 'Syed Usama ',
     // 'Ahmad Tariq',
     // 'Abdul Basit',
     // 'Hamza Anjum',

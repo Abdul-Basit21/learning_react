@@ -1,6 +1,7 @@
 .hero-main {
   height: calc(100vh - 75px);
   background-color: #e7f9f7;
+  margin-top: 75px;
 }
 .hero-main .container,
 .hero-main .row {
