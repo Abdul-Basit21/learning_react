@@ -14,19 +14,6 @@ export default function Navbar() {
     }
   };
 
-  ud
-
-  useEffect ( ()=> {
-
-    var scrollDiv = document.querySelector('.scrollbar');
-  
-    window.scroll = () => {
-      let ScrollT = (document).scrollTop();
-      let pageH = (document).height() - (window).height();
-      let progress = (100 * ScrollT) / pageH;
-      $(".scroll-bar").css("width", `{progress}%`);
-    }
-  },[])
 
 
 
